@@ -1,5 +1,7 @@
 package edu.teamrocket;
 
+import edu.teamrocket.carrera.Carrera;
+
 import java.util.ArrayList;
 import java.util.List;
 
