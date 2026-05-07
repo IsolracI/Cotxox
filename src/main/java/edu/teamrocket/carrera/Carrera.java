@@ -1,5 +1,7 @@
 package edu.teamrocket.carrera;
 
+import edu.teamrocket.tarifa.Tarifa;
+
 public class Carrera {
     private final String tarjetaCredito;
     private String origen = "";
@@ -7,6 +9,7 @@ public class Carrera {
     private double distancia = 0d;
     private int tiempoEsperado = 0;
     private int tiempoCarrera = 0;
+    private double costeEsperado = 0d;
     private double costeTotal = 0d;
     private int propina = 0;
 
@@ -48,6 +51,10 @@ public class Carrera {
 
     public int getTiempoEsperado() {
         return this.tiempoEsperado;
+    }
+
+    public double getCosteEsperado() {
+        return Tarifa.getCosteTotalEsperado(this);
     }
 
     public void setTiempoCarrera(int tiempoCarrera) {
