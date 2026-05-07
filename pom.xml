@@ -68,7 +68,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>edu.teamrocket.App</mainClass>
+                        <mainClass>edu.teamrocket.Cotxox</mainClass>
                     </manifest>
                 </archive>
             </configuration>
