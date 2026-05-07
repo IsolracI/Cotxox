@@ -26,12 +26,12 @@ public class Cotxox {
         carrera.setDistancia(distancia);
         carrera.setTiempoEsperado(tiempoEsperadoMinutos);
 
-//        System.out.println("\n#####" + "\t Set Pickup: \t" + "#####\n");
-//
-//        System.out.println("Visa: " + carrera.getTarjetaCredito());
-//        System.out.println("From: " + carrera.getOrigen());
-//        System.out.println("To: " + carrera.getDestino());
-//        System.out.println("Distance: " + carrera.getDistancia());
+        System.out.println("\n#####" + "\t Set Pickup: \t" + "#####\n");
+
+        System.out.println("Visa: " + carrera.getTarjetaCredito());
+        System.out.println("From: " + carrera.getOrigen());
+        System.out.println("To: " + carrera.getDestino());
+        System.out.println("Distance: " + carrera.getDistancia());
 //
 //        System.out.println("\n#####" + "\t See your Cost: \t" + "#####\n");
 //
