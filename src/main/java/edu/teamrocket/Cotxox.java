@@ -2,6 +2,7 @@ package edu.teamrocket;
 
 import edu.teamrocket.carrera.Carrera;
 import edu.teamrocket.conductores.Conductor;
+import edu.teamrocket.conductores.PoolConductores;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,10 +74,10 @@ public class Cotxox {
             index++;
         }
 
-//        // Creamos el objeto flota de conductores, de la clase PoolConductores.
-//
-//        PoolConductores conductores = new PoolConductores(poolConductores);
-//
+        // Creamos el objeto flota de conductores, de la clase PoolConductores.
+
+        PoolConductores conductores = new PoolConductores(poolConductores);
+
 //        /* Seleccion del conductor en la flota y asignacion a la carrera */
 //
 //        carrera.asignarConductor(conductores);

@@ -8,7 +8,7 @@ public class Conductor {
     private String modelo;
     private String matricula;
     private double valoracionMedia;
-    private boolean ocupado;
+    private boolean ocupado = false;
     private List<Byte> valoraciones = new ArrayList<Byte>();
 
     public Conductor() {}
@@ -49,5 +49,11 @@ public class Conductor {
         return this.valoraciones.size();
     }
 
+    public boolean isOcupado() {
+        return this.ocupado;
+    }
 
+    public void setOcupado(boolean ocupado) {
+        this.ocupado = ocupado;
+    }
 }
