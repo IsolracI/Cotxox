@@ -1,9 +1,14 @@
 package edu.teamrocket.carrera;
 
+import edu.teamrocket.conductores.Conductor;
+import edu.teamrocket.conductores.PoolConductores;
 import edu.teamrocket.tarifa.Tarifa;
+
+import java.util.List;
 
 public class Carrera {
     private final String tarjetaCredito;
+    private Conductor conductor;
     private String origen = "";
     private String destino = "";
     private double distancia = 0d;
@@ -65,5 +70,16 @@ public class Carrera {
         return this.tiempoCarrera;
     }
 
+    public void setConductor(Conductor conductor) {
+        this.conductor = conductor;
+    }
 
+    public Conductor getConductor() {
+        return this.conductor;
+    }
+
+    public void asignarConductor(PoolConductores conductores) {
+        Conductor conductorDisponible =conductores.asignarConductor();
+        setConductor(conductorDisponible);
+    }
 }
