@@ -11,9 +11,9 @@ public class Conductor {
     private boolean ocupado;
     private List<Byte> valoraciones = new ArrayList<Byte>();
 
-    Conductor() {}
+    public Conductor() {}
 
-    Conductor(String nombre) {
+    public Conductor(String nombre) {
         this.nombre = nombre;
     }
 
